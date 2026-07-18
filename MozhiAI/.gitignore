@@ -1,0 +1,37 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Backend
+backend/venv/
+backend/__pycache__/
+*.pyc
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment
+*.local
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+backend/venv/
+venv/
+.venv/
+__pycache__/
+*.pyc
