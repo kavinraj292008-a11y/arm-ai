@@ -1,0 +1,5 @@
+{
+  "buildCommand": "cd MozhiAI/frontend && npm install && npm run build",
+  "outputDirectory": "MozhiAI/frontend/dist",
+  "installCommand": "cd MozhiAI/frontend && npm install"
+}
