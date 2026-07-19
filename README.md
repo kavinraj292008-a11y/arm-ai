@@ -4,6 +4,7 @@
 **Offline Multilingual Voice AI for Tamil, Hindi & Telugu — optimized for Arm hardware.**
 
 🔗 **Live Demo:** https://arm-ai.vercel.app
+📁 **GitHub:** https://github.com/kavinraj292008-a11y/arm-ai
 
 ---
 
@@ -17,6 +18,9 @@ No cloud API calls. No cost.
 ---
 
 ## Architecture
+Voice Input → VaniSTT (Whisper INT4) → ArmLM (Phi-3 Mini Q4) → VaniTTS (gTTS) → Voice Output
+All 3 engines run on a single Arm64 server. No cloud. No latency from external APIs.
+
 ## 5 Components
 
 | Component | Technology | Purpose |
@@ -43,7 +47,7 @@ No cloud API calls. No cost.
 ## Supported Languages
 
 - 🇮🇳 Tamil (தமிழ்)
-- 🇮🇳 Hindi (हिंदी)  
+- 🇮🇳 Hindi (हिंदी)
 - 🇮🇳 Telugu (తెలుగు)
 
 ---
@@ -55,6 +59,7 @@ No cloud API calls. No cost.
 2. Run all cells
 3. Copy the ngrok URL
 4. Set `API` in `frontend/src/App.jsx`
+5. Visit https://arm-ai.vercel.app
 
 ### Option 2: Any Arm64 Server
 ```bash
@@ -82,13 +87,14 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 
 ## Benchmark Results
 
-| Metric | Value |
-|---|---|
-| Phi-3 Mini original | 7.2 GB |
-| Phi-3 Mini quantized | 2.2 GB |
-| Compression ratio | **4×** |
-| Tokens/sec (Colab CPU) | 2.34 |
-| Full pipeline latency | ~120s (CPU) |
+| Metric | Original | Optimized |
+|---|---|---|
+| Phi-3 Mini model size | 7,372 MB | 2,282 MB (**4×**) |
+| Whisper model size | 244 MB | 61 MB (**4×**) |
+| STT latency | — | 1,841 ms |
+| LLM tokens/sec | — | 2.51 tok/s |
+| TTS latency | — | 213 ms |
+| Infrastructure cost | $$$ | ₹0 free |
 
 ---
 
