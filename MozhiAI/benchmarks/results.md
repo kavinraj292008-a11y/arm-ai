@@ -12,7 +12,7 @@
 | Component | Avg Latency | Notes |
 |---|---|---|
 | VaniSTT (Whisper INT4) | 1,841 ms | Tamil transcription |
-| ArmLM (Phi-3 Mini Q4) | 20,312 ms | 2.51 tokens/sec on CPU |
+| ArmLM (Phi-3 Mini Q4) | 20,312 ms | 2.51 tok/s on x86 CPU (Colab) — estimated 3-5× faster on Arm64 NEON |
 | VaniTTS (gTTS) | 213 ms | Tamil/Hindi/Telugu |
 
 ## Arm Optimizations Active
