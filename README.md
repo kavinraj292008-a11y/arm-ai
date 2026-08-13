@@ -1,10 +1,10 @@
-# MozhiAI 🗣️
+# MozhiAI 
 > மொழி (Mozhi) = Language in Tamil
 
 **Offline Multilingual Voice AI for Tamil, Hindi & Telugu — optimized for Arm hardware.**
 
-🔗 **Live Demo:** https://arm-ai.vercel.app
-📁 **GitHub:** https://github.com/kavinraj292008-a11y/arm-ai
+ **Live Demo:** https://arm-ai.vercel.app
+ **GitHub:** https://github.com/kavinraj292008-a11y/arm-ai
 
 ---
 
